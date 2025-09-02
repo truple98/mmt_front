@@ -1,0 +1,23 @@
+.app-layout {
+  display: grid;
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar content";
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+  transition: grid-template-columns 0.3s ease-in-out;
+}
+
+.app-layout.sidebar-open {
+  grid-template-columns: 200px 1fr;
+}
+
+.app-layout.sidebar-closed {
+  grid-template-columns: 0px 1fr;
+}
+
+.content {
+  grid-area: content;
+  background-color: #FEFEFE;
+  padding: 20px;
+}

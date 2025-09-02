@@ -1,0 +1,23 @@
+.header {
+  grid-area: header;
+  background-color: #FAF7FA;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.sidebar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
