@@ -5,10 +5,11 @@ import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import Diary from './pages/Diary';
 import Journal from './pages/Journal';
+import Momentum from './pages/Momentum';
 import Layout from './components/Layout';
 import './index.css'
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="diary" element={<Diary />} />
           <Route path="journal" element={<Journal />} />
+          <Route path="momentum" element={<Momentum />} />          
         </Route>
       </Routes>
     </BrowserRouter>

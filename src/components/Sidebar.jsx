@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiEdit, FiBook } from 'react-icons/fi';
+import { GiStairsGoal } from 'react-icons/gi';
 import './Sidebar.css';
 
-function Sidebar() {
+const Sidebar = () => {
   const location = useLocation();
 
   const menuItems =[
@@ -16,6 +17,11 @@ function Sidebar() {
       path: '/journal',
       label: '일지 작성',
       icon: <FiBook size={20} />
+    },
+    {
+      path: '/momentum',
+      label: '모멘텀',
+      icon: <GiStairsGoal size={20} />
     }
   ];
 
