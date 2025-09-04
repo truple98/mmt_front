@@ -16,8 +16,29 @@
   grid-template-columns: 0px 1fr;
 }
 
+
+
+/* HEADER */
+.header {
+  grid-area: header;
+  background-color: #FAF7FA;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 양쪽 끝으로 배치 */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* CONTENT */
 .content {
   grid-area: content;
   background-color: #FEFEFE;
   padding: 20px;
 }
+

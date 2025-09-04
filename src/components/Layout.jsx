@@ -16,9 +16,11 @@ const Layout = () => {
   return (
     <div className={`app-layout ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
       <header className="header">
-        <button className="sidebar-toggle" onClick={toggleSidebar}>
-          <BsLayoutSidebar size={20} />
-        </button>
+        <div className="header-left">
+          <button className="sidebar-toggle" onClick={toggleSidebar}>
+            <BsLayoutSidebar size={20} />
+          </button>
+        </div> 
         <Header />
       </header>
 

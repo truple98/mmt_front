@@ -55,8 +55,6 @@
 .google-login-button:hover {
   background: #f9fafb;
   border-color: #d1d5db;
-  transform: translateY(-1px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .google-login-button:active {

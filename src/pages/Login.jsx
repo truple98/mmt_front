@@ -7,9 +7,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleGoogleLogin = () => {
-    // TODO: 구글 OAuth 로그인 로직 구현
-    console.log('Google login initiated');
-    navigate('/');
+    // 백엔드 Google OAuth 엔드포인트로 리다이렉트
+    window.location.href = 'http://localhost:3000/auth/google';
   };
 
   return (
